@@ -11,7 +11,7 @@
   var prevScrollpos = window.pageYOffset;
   window.onscroll = function() {
     var currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
+    if (currentScrollPos < 50) {
       document.getElementById("bottom").style.bottom = "1%";
     } else {
       document.getElementById("bottom").style.bottom = "-100px";
